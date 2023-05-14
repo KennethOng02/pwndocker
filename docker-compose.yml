@@ -1,0 +1,10 @@
+version: "3"
+services:
+  pwn:
+    platform: linux/amd64
+    build: 
+      context: .
+    image: ctf:ubuntu
+    container_name: ctf-pwn
+    cap_add:
+      - SYS_PTRACE
